@@ -18,6 +18,8 @@
 		8B59410024B33A6E00346653 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5940FF24B33A6E00346653 /* MainCoordinator.swift */; };
 		8B59410224B33EC700346653 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B59410124B33EC700346653 /* ViewController1.swift */; };
 		8B59410424B33ED300346653 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B59410324B33ED300346653 /* ViewController2.swift */; };
+		8B8B2EC224B3A7FC00A6EA8F /* SceneOneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8B2EC124B3A7FC00A6EA8F /* SceneOneCoordinator.swift */; };
+		8B8B2EC424B3A80E00A6EA8F /* SceneTwoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8B2EC324B3A80E00A6EA8F /* SceneTwoCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		8B5940FF24B33A6E00346653 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		8B59410124B33EC700346653 /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 		8B59410324B33ED300346653 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		8B8B2EC124B3A7FC00A6EA8F /* SceneOneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneOneCoordinator.swift; sourceTree = "<group>"; };
+		8B8B2EC324B3A80E00A6EA8F /* SceneTwoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneTwoCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,20 +70,70 @@
 		8B5940E624B3381700346653 /* CoordinatorPattern */ = {
 			isa = PBXGroup;
 			children = (
-				8B5940E724B3381700346653 /* AppDelegate.swift */,
-				8B5940E924B3381700346653 /* SceneDelegate.swift */,
-				8B5940EB24B3381700346653 /* ViewController.swift */,
-				8B5940ED24B3381700346653 /* Main.storyboard */,
-				8B5940F024B3381900346653 /* Assets.xcassets */,
-				8B5940F224B3381900346653 /* LaunchScreen.storyboard */,
+				8B8B2EBF24B3A79200A6EA8F /* Utility */,
+				8B8B2EBE24B3A78700A6EA8F /* Resources */,
+				8B8B2EBB24B3A71900A6EA8F /* Main Scene */,
 				8B5940F524B3381900346653 /* Info.plist */,
-				8B5940FB24B3384500346653 /* Coordinator.swift */,
-				8B5940FD24B338E000346653 /* StoryBoard.swift */,
-				8B5940FF24B33A6E00346653 /* MainCoordinator.swift */,
-				8B59410124B33EC700346653 /* ViewController1.swift */,
-				8B59410324B33ED300346653 /* ViewController2.swift */,
 			);
 			path = CoordinatorPattern;
+			sourceTree = "<group>";
+		};
+		8B8B2EBB24B3A71900A6EA8F /* Main Scene */ = {
+			isa = PBXGroup;
+			children = (
+				8B8B2EBD24B3A73D00A6EA8F /* Scene 2 Coordinator */,
+				8B8B2EBC24B3A72F00A6EA8F /* Scene 1 Coordinator */,
+				8B5940EB24B3381700346653 /* ViewController.swift */,
+				8B5940FF24B33A6E00346653 /* MainCoordinator.swift */,
+			);
+			path = "Main Scene";
+			sourceTree = "<group>";
+		};
+		8B8B2EBC24B3A72F00A6EA8F /* Scene 1 Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				8B8B2EC024B3A7E500A6EA8F /* New Group */,
+				8B59410124B33EC700346653 /* ViewController1.swift */,
+				8B8B2EC124B3A7FC00A6EA8F /* SceneOneCoordinator.swift */,
+			);
+			path = "Scene 1 Coordinator";
+			sourceTree = "<group>";
+		};
+		8B8B2EBD24B3A73D00A6EA8F /* Scene 2 Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				8B59410324B33ED300346653 /* ViewController2.swift */,
+				8B8B2EC324B3A80E00A6EA8F /* SceneTwoCoordinator.swift */,
+			);
+			path = "Scene 2 Coordinator";
+			sourceTree = "<group>";
+		};
+		8B8B2EBE24B3A78700A6EA8F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8B5940F024B3381900346653 /* Assets.xcassets */,
+				8B5940ED24B3381700346653 /* Main.storyboard */,
+				8B5940E924B3381700346653 /* SceneDelegate.swift */,
+				8B5940E724B3381700346653 /* AppDelegate.swift */,
+				8B5940F224B3381900346653 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8B8B2EBF24B3A79200A6EA8F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				8B5940FB24B3384500346653 /* Coordinator.swift */,
+				8B5940FD24B338E000346653 /* StoryBoard.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		8B8B2EC024B3A7E500A6EA8F /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,12 +207,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B8B2EC424B3A80E00A6EA8F /* SceneTwoCoordinator.swift in Sources */,
 				8B5940FE24B338E000346653 /* StoryBoard.swift in Sources */,
 				8B59410424B33ED300346653 /* ViewController2.swift in Sources */,
 				8B59410024B33A6E00346653 /* MainCoordinator.swift in Sources */,
 				8B5940FC24B3384500346653 /* Coordinator.swift in Sources */,
 				8B5940EC24B3381700346653 /* ViewController.swift in Sources */,
 				8B59410224B33EC700346653 /* ViewController1.swift in Sources */,
+				8B8B2EC224B3A7FC00A6EA8F /* SceneOneCoordinator.swift in Sources */,
 				8B5940E824B3381700346653 /* AppDelegate.swift in Sources */,
 				8B5940EA24B3381700346653 /* SceneDelegate.swift in Sources */,
 			);

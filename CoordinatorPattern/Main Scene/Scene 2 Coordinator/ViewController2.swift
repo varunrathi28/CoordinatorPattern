@@ -8,9 +8,16 @@
 
 import UIKit
 class ViewController2 : UIViewController, StoryboardInstantiable {
-    weak var coordinator: MainCoordinator?
+    weak var coordinator: FlowCoordinator2?
     override func viewDidLoad() {
     super.viewDidLoad()
 }
+
+    override func viewDidDisappear(_ animated:Bool){
+        super.viewDidDisappear(animated)
+        coordinator?.flowFinished()
+    }
+    
+    
     
 }
